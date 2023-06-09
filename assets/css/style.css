@@ -79,7 +79,7 @@ body {
 
 .col-5-5 {
     width: 47.3333333%;
-    flex: 0 0 atuo;
+    flex: 0 0 auto;
 }
 
 .w-50 {
@@ -144,6 +144,33 @@ body {
     font-weight: 700;
 }
 
+.burger {
+    background: linear-gradient(to right, #0153d4, #6eaffc);
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.burg-nav {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-line {
+    width: 50%;
+    height: 2px;
+    background-color: #f0f0f0;
+    z-index: 3;
+    border-radius: 6px;
+}
+
 .film-info {
     margin-top: .3rem;
     gap: .5rem;
@@ -196,6 +223,10 @@ body {
     margin-right: .5rem;
 }
 
+.btns .bookmark svg {
+    margin-right: 0;
+}
+
 .trailer {
     background: linear-gradient(to right, #000e21, #1d1f27);
     width: 120px;
@@ -217,6 +248,7 @@ body {
 }
 .rec-cards {
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 .card-img img{
     border-radius: 6px;
@@ -444,4 +476,129 @@ input[type=checkbox]:checked + .fake-check::before {
 .form-sub .price {
     color: #6fb1fc;
     margin-bottom: 1.5rem;
+}
+
+.footer {
+    background-color: #1f1f1f;
+    padding: 2rem 0;
+}
+
+.copyright {
+    font-size: .75rem;
+    font-family: 'Golos';
+    font-weight: 400;
+    color: #f0f0f0;
+}
+
+.confidential a {
+    margin-left: 1rem;
+    text-decoration: underline;
+    font-size: .75rem;
+}
+
+.social-webs {
+    gap: 1rem;
+}
+
+.social-webs svg {
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 8px;
+    }
+    .container {
+        width: 400px;
+        flex-wrap: wrap;
+    }
+    .nav, .icons-header {
+        display: none;
+    }
+    .burger {
+        display: flex;
+    }
+    .container-md {
+        width: 380px;
+    }
+    .col-5 {
+        width: 100%;
+    }
+    .watch {
+        width: 150px;
+    }
+    .trailer {
+        width: 80px;
+    }
+    .bookmark {
+        width: 35px;
+    }
+    .container-md .desc {
+        padding: 0 5rem 0 0;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .recommendations .title {
+        text-align: center;
+    }
+    .rec-card {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .filter_films .container{
+        padding: 6.25rem 3rem;
+    }
+    .opening_week svg {
+        width: 20px;
+        height: 10px;
+    }
+    .col-7 {
+        width: 100%;
+    }
+    .col-7 .h-50 img {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .change.active::after {
+        top: 11px;
+    }
+    .col-6, .col-6 img {
+        width: 100%;
+    }
+    .fake {
+        height: 12px;
+        width: 12px;
+        border: 1px solid #f0f0f0;
+    }
+    .fake::before {
+        height: 6px;
+        width: 6px;
+    }
+    .fake-check {
+        height: 12px;
+        width: 12px;
+        border: 1px solid #f0f0f0;
+    }
+    .footer .container {
+        flex-direction: column;
+    }
+    .social-webs svg {
+        height: 20px;
+        width: 12px;
+    }
+    .rather {
+        flex-direction: column;
+    }
+    .rather a {
+        margin: 0;
+    }
+    .confidential {
+        margin-top: .7rem;
+    }
+    .social-webs {
+        margin-top: .7rem;
+    }
 }
